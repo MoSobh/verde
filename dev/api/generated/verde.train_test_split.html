@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -132,7 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../index.html#interpolators">Interpolators</a></li>
@@ -254,7 +256,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="verde-train-test-split">
+  <section id="verde-train-test-split">
 <h1>verde.train_test_split<a class="headerlink" href="#verde-train-test-split" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="verde.train_test_split">
@@ -391,34 +393,46 @@ the input values randomly.</p>
 </div>
 </dd></dl>
 
-<div class="section" id="examples-using-verde-train-test-split">
+<section id="examples-using-verde-train-test-split">
 <h2>Examples using <code class="docutils literal notranslate"><span class="pre">verde.train_test_split</span></code><a class="headerlink" href="#examples-using-verde-train-test-split" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip="Biharmonic spline interpolation is based on estimating vertical forces acting on an elastic she..."><div class="figure align-default" id="id2">
+<div class="sphx-glr-thumbcontainer" tooltip="Biharmonic spline interpolation is based on estimating vertical forces acting on an elastic she..."><figure class="align-default" id="id2">
 <img alt="Gridding with splines" src="../../_images/sphx_glr_spline_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/spline.html#sphx-glr-gallery-spline-py"><span class="std std-ref">Gridding with splines</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="An advantage of using the Green&#x27;s functions based verde.Spline over verde.ScipyGridder is that ..."><div class="figure align-default" id="id3">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/spline.html#sphx-glr-gallery-spline-py"><span class="std std-ref">Gridding with splines</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="An advantage of using the Green&#x27;s functions based verde.Spline over verde.ScipyGridder is that ..."><figure class="align-default" id="id3">
 <img alt="Gridding with splines and weights" src="../../_images/sphx_glr_spline_weights_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/spline_weights.html#sphx-glr-gallery-spline-weights-py"><span class="std std-ref">Gridding with splines and weights</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Verde gridders are mostly linear models that are used to predict data at new locations. As such..."><div class="figure align-default" id="id4">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/spline_weights.html#sphx-glr-gallery-spline-weights-py"><span class="std std-ref">Gridding with splines and weights</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Verde gridders are mostly linear models that are used to predict data at new locations. As such..."><figure class="align-default" id="id4">
 <img alt="Splitting data into train and test sets" src="../../_images/sphx_glr_train_test_split_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/train_test_split.html#sphx-glr-gallery-train-test-split-py"><span class="std std-ref">Splitting data into train and test sets</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="We can use verde.Vector to simultaneously process and grid all components of vector data. Each ..."><div class="figure align-default" id="id5">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/train_test_split.html#sphx-glr-gallery-train-test-split-py"><span class="std std-ref">Splitting data into train and test sets</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="We can use verde.Vector to simultaneously process and grid all components of vector data. Each ..."><figure class="align-default" id="id5">
 <img alt="Gridding 2D vectors" src="../../_images/sphx_glr_vector_uncoupled_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/vector_uncoupled.html#sphx-glr-gallery-vector-uncoupled-py"><span class="std std-ref">Gridding 2D vectors</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="The Green&#x27;s functions based interpolations in Verde are all linear regressions under the hood. ..."><div class="figure align-default" id="id6">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/vector_uncoupled.html#sphx-glr-gallery-vector-uncoupled-py"><span class="std std-ref">Gridding 2D vectors</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="The Green&#x27;s functions based interpolations in Verde are all linear regressions under the hood. ..."><figure class="align-default" id="id6">
 <img alt="Evaluating Performance" src="../../_images/sphx_glr_model_evaluation_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/model_evaluation.html#sphx-glr-tutorials-model-evaluation-py"><span class="std std-ref">Evaluating Performance</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Some datasets have multiple vector components measured for each location, like the East and Wes..."><div class="figure align-default" id="id7">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/model_evaluation.html#sphx-glr-tutorials-model-evaluation-py"><span class="std std-ref">Evaluating Performance</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Some datasets have multiple vector components measured for each location, like the East and Wes..."><figure class="align-default" id="id7">
 <img alt="Vector Data" src="../../_images/sphx_glr_vectors_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/vectors.html#sphx-glr-tutorials-vectors-py"><span class="std std-ref">Vector Data</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
-</div><div style='clear:both'></div></div>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/vectors.html#sphx-glr-tutorials-vectors-py"><span class="std std-ref">Vector Data</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div style='clear:both'></div></section>
+</section>
 
 
            </div>
@@ -442,7 +456,7 @@ the input values randomly.</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

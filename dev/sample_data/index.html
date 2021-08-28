@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Sample Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#where-are-my-data-files">Where are my data files?</a></li>
@@ -143,7 +145,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
@@ -244,57 +246,67 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sample-data">
+  <section id="sample-data">
 <span id="sphx-glr-sample-data"></span><span id="id1"></span><h1>Sample Data<a class="headerlink" href="#sample-data" title="Permalink to this headline">¶</a></h1>
 <p>Verde provides some sample data and ways of generating synthetic data through
 the <a class="reference internal" href="../api/index.html#module-verde.datasets" title="verde.datasets"><code class="xref py py-mod docutils literal notranslate"><span class="pre">verde.datasets</span></code></a> module.</p>
-<div class="section" id="where-are-my-data-files">
+<section id="where-are-my-data-files">
 <h2>Where are my data files?<a class="headerlink" href="#where-are-my-data-files" title="Permalink to this headline">¶</a></h2>
-<p>The sample data files are downloaded automatically by <a class="reference external" href="https://www.fatiando.org/pooch/latest/api/index.html#module-pooch" title="(in Pooch vv1.3.0)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pooch</span></code></a> the first
+<p>The sample data files are downloaded automatically by <a class="reference external" href="https://www.fatiando.org/pooch/latest/api/index.html#module-pooch" title="(in Pooch vv1.5.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pooch</span></code></a> the first
 time you load them. The files are saved to the default cache location on your
 operating system. The location varies depending on your system and
 configuration. We provide the <a class="reference internal" href="../api/generated/verde.datasets.locate.html#verde.datasets.locate" title="verde.datasets.locate"><code class="xref py py-func docutils literal notranslate"><span class="pre">verde.datasets.locate</span></code></a> function if you
 need to find the data storage location on your system.</p>
 <p>You can change the base data directory by setting the <code class="docutils literal notranslate"><span class="pre">VERDE_DATA_DIR</span></code>
 environment variable to the desired path.</p>
-</div>
-<div class="section" id="available-datasets">
+</section>
+<section id="available-datasets">
 <h2>Available datasets<a class="headerlink" href="#available-datasets" title="Permalink to this headline">¶</a></h2>
 <p>These are the datasets currently available. Most also come with a companion
 function for setting up a Cartopy map to display the data.</p>
-<div class="sphx-glr-thumbcontainer" tooltip="We provide sample bathymetry data from Baja California to test the gridding methods. This is th..."><div class="figure align-default" id="id2">
+<div class="sphx-glr-thumbcontainer" tooltip="We provide sample bathymetry data from Baja California to test the gridding methods. This is th..."><figure class="align-default" id="id2">
 <img alt="Bathymetry data from Baja California" src="../_images/sphx_glr_baja_bathymetry_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="baja_bathymetry.html#sphx-glr-sample-data-baja-bathymetry-py"><span class="std std-ref">Bathymetry data from Baja California</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="baja_bathymetry.html#sphx-glr-sample-data-baja-bathymetry-py"><span class="std std-ref">Bathymetry data from Baja California</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 </div><div class="toctree-wrapper compound">
 </div>
-<div class="sphx-glr-thumbcontainer" tooltip="We provide sample 3-component GPS velocity data from the West coast of the U.S. The data were c..."><div class="figure align-default" id="id3">
+<div class="sphx-glr-thumbcontainer" tooltip="We provide sample 3-component GPS velocity data from the West coast of the U.S. The data were c..."><figure class="align-default" id="id3">
 <img alt="GPS velocities from California" src="../_images/sphx_glr_california_gps_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="california_gps.html#sphx-glr-sample-data-california-gps-py"><span class="std std-ref">GPS velocities from California</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="california_gps.html#sphx-glr-sample-data-california-gps-py"><span class="std std-ref">GPS velocities from California</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 </div><div class="toctree-wrapper compound">
 </div>
-<div class="sphx-glr-thumbcontainer" tooltip="The verde.datasets.CheckerBoard class generates synthetic data in a checkerboard pattern. It ha..."><div class="figure align-default" id="id4">
+<div class="sphx-glr-thumbcontainer" tooltip="The verde.datasets.CheckerBoard class generates synthetic data in a checkerboard pattern. It ha..."><figure class="align-default" id="id4">
 <img alt="Checkerboard function" src="../_images/sphx_glr_checkerboard_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="checkerboard.html#sphx-glr-sample-data-checkerboard-py"><span class="std std-ref">Checkerboard function</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="checkerboard.html#sphx-glr-sample-data-checkerboard-py"><span class="std std-ref">Checkerboard function</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 </div><div class="toctree-wrapper compound">
 </div>
-<div class="sphx-glr-thumbcontainer" tooltip="    **The Rio magnetic anomaly dataset is deprecated and will be removed in     Verde v2.0.0** ..."><div class="figure align-default" id="id5">
+<div class="sphx-glr-thumbcontainer" tooltip="    **The Rio magnetic anomaly dataset is deprecated and will be removed in     Verde v2.0.0** ..."><figure class="align-default" id="id5">
 <img alt="[DEPRECATED] Magnetic data from Rio de Janeiro" src="../_images/sphx_glr_rio_magnetic_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="rio_magnetic.html#sphx-glr-sample-data-rio-magnetic-py"><span class="std std-ref">[DEPRECATED] Magnetic data from Rio de Janeiro</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="rio_magnetic.html#sphx-glr-sample-data-rio-magnetic-py"><span class="std std-ref">[DEPRECATED] Magnetic data from Rio de Janeiro</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 </div><div class="toctree-wrapper compound">
 </div>
-<div class="sphx-glr-thumbcontainer" tooltip="This is average wind speed and air temperature for data for the state of Texas, USA, on Februar..."><div class="figure align-default" id="id6">
+<div class="sphx-glr-thumbcontainer" tooltip="This is average wind speed and air temperature for data for the state of Texas, USA, on Februar..."><figure class="align-default" id="id6">
 <img alt="Wind speed data from Texas" src="../_images/sphx_glr_texas-wind_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="texas-wind.html#sphx-glr-sample-data-texas-wind-py"><span class="std std-ref">Wind speed data from Texas</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="texas-wind.html#sphx-glr-sample-data-texas-wind-py"><span class="std std-ref">Wind speed data from Texas</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 </div><div class="toctree-wrapper compound">
 </div>
 <div class="sphx-glr-clear"></div><p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -318,7 +330,7 @@ function for setting up a Cartopy map to display the data.</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

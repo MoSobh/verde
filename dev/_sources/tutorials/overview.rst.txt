@@ -240,7 +240,7 @@ determination <https://en.wikipedia.org/wiki/Coefficient_of_determination>`__.
 
  .. code-block:: none
 
-    0.9950450871661976
+    0.99504508716622
 
 
 
@@ -273,7 +273,7 @@ coordinates and output an :class:`xarray.Dataset`.
  .. code-block:: none
 
     <xarray.Dataset>
-    Dimensions:   (easting: 167, northing: 168)
+    Dimensions:   (northing: 168, easting: 167)
     Coordinates:
       * easting   (easting) float64 23.48 53.42 83.37 ... 4.964e+03 4.994e+03
       * northing  (northing) float64 -4.997e+03 -4.967e+03 ... -30.88 -0.9571
@@ -390,7 +390,7 @@ documentation will involve some variation of the following workflow:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.693 seconds)
+   **Total running time of the script:** ( 0 minutes  1.204 seconds)
 
 
 .. _sphx_glr_download_tutorials_overview.py:

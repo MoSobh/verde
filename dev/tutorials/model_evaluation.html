@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="grid_coordinates.html">Grid Coordinates</a></li>
@@ -139,7 +141,7 @@
 <li class="toctree-l1"><a class="reference internal" href="weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
@@ -245,7 +247,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-tutorials-model-evaluation-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="evaluating-performance">
+<section class="sphx-glr-example-title" id="evaluating-performance">
 <span id="model-evaluation"></span><span id="sphx-glr-tutorials-model-evaluation-py"></span><h1>Evaluating Performance<a class="headerlink" href="#evaluating-performance" title="Permalink to this headline">¶</a></h1>
 <p>The Green’s functions based interpolations in Verde are all linear regressions under the
 hood. This means that we can use some of the same tactics from
@@ -273,7 +275,7 @@ our sample air temperature data.</p>
 <a href="https://docs.python.org/3/library/functions.html#float" title="builtins.float" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spacing</span></a> <span class="o">=</span> <span class="mi">15</span> <span class="o">/</span> <span class="mi">60</span>
 </pre></div>
 </div>
-<div class="section" id="splitting-the-data">
+<section id="splitting-the-data">
 <h2>Splitting the data<a class="headerlink" href="#splitting-the-data" title="Permalink to this headline">¶</a></h2>
 <p>We can’t evaluate a gridder on the data that went into fitting it. The true test of a
 model is if it can correctly predict data that it hasn’t seen before. scikit-learn has
@@ -526,22 +528,22 @@ the grid:</p>
 <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <a href="https://scitools.org.uk/cartopy/docs/latest/matplotlib/geoaxes.html#cartopy.mpl.geoaxes.GeoAxesSubplot" title="cartopy.mpl.geoaxes.GeoAxesSubplot" class="sphx-glr-backref-module-cartopy-mpl-geoaxes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a> <span class="o">=</span> <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.axes.html#matplotlib.pyplot.axes" title="matplotlib.pyplot.axes" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">axes</span></a><span class="p">(</span><span class="n">projection</span><span class="o">=</span><a href="https://scitools.org.uk/cartopy/docs/latest/crs/projections.html#cartopy.crs.Mercator" title="cartopy.crs.Mercator" class="sphx-glr-backref-module-cartopy-crs sphx-glr-backref-type-py-class"><span class="n">ccrs</span><span class="o">.</span><span class="n">Mercator</span></a><span class="p">())</span>
 <a href="https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_title.html#matplotlib.axes.Axes.set_title" title="matplotlib.axes.Axes.set_title" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-method"><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span></a><span class="p">(</span><span class="s2">&quot;Gridded temperature&quot;</span><span class="p">)</span>
-<a href="https://matplotlib.org/api/collections_api.html#matplotlib.collections.QuadMesh" title="matplotlib.collections.QuadMesh" class="sphx-glr-backref-module-matplotlib-collections sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pc</span></a> <span class="o">=</span> <a href="http://xarray.pydata.org/en/stable/generated/xarray.Dataset.html#xarray.Dataset" title="xarray.Dataset" class="sphx-glr-backref-module-xarray sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">grid</span></a><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span>
+<span class="n">pc</span> <span class="o">=</span> <a href="http://xarray.pydata.org/en/stable/generated/xarray.Dataset.html#xarray.Dataset" title="xarray.Dataset" class="sphx-glr-backref-module-xarray sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">grid</span></a><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span>
     <a href="https://scitools.org.uk/cartopy/docs/latest/matplotlib/geoaxes.html#cartopy.mpl.geoaxes.GeoAxesSubplot" title="cartopy.mpl.geoaxes.GeoAxesSubplot" class="sphx-glr-backref-module-cartopy-mpl-geoaxes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="o">=</span><a href="https://scitools.org.uk/cartopy/docs/latest/matplotlib/geoaxes.html#cartopy.mpl.geoaxes.GeoAxesSubplot" title="cartopy.mpl.geoaxes.GeoAxesSubplot" class="sphx-glr-backref-module-cartopy-mpl-geoaxes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">,</span>
     <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;plasma&quot;</span><span class="p">,</span>
     <span class="n">transform</span><span class="o">=</span><a href="https://scitools.org.uk/cartopy/docs/latest/crs/projections.html#cartopy.crs.PlateCarree" title="cartopy.crs.PlateCarree" class="sphx-glr-backref-module-cartopy-crs sphx-glr-backref-type-py-class"><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span></a><span class="p">(),</span>
     <span class="n">add_colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">add_labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
 <span class="p">)</span>
-<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.colorbar.html#matplotlib.pyplot.colorbar" title="matplotlib.pyplot.colorbar" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span></a><span class="p">(</span><a href="https://matplotlib.org/api/collections_api.html#matplotlib.collections.QuadMesh" title="matplotlib.collections.QuadMesh" class="sphx-glr-backref-module-matplotlib-collections sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pc</span></a><span class="p">)</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.colorbar.html#matplotlib.pyplot.colorbar" title="matplotlib.pyplot.colorbar" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span></a><span class="p">(</span><span class="n">pc</span><span class="p">)</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
 <a href="https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.plot.html#matplotlib.axes.Axes.plot" title="matplotlib.axes.Axes.plot" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-method"><span class="n">ax</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span><span class="o">.</span><span class="n">longitude</span></a><span class="p">,</span> <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span><span class="o">.</span><span class="n">latitude</span></a><span class="p">,</span> <span class="s2">&quot;.k&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><a href="https://scitools.org.uk/cartopy/docs/latest/crs/projections.html#cartopy.crs.PlateCarree" title="cartopy.crs.PlateCarree" class="sphx-glr-backref-module-cartopy-crs sphx-glr-backref-type-py-class"><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span></a><span class="p">())</span>
 <a href="../api/generated/verde.datasets.setup_texas_wind_map.html#verde.datasets.setup_texas_wind_map" title="verde.datasets.setup_texas_wind_map" class="sphx-glr-backref-module-verde-datasets sphx-glr-backref-type-py-function"><span class="n">vd</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">setup_texas_wind_map</span></a><span class="p">(</span><a href="https://scitools.org.uk/cartopy/docs/latest/matplotlib/geoaxes.html#cartopy.mpl.geoaxes.GeoAxesSubplot" title="cartopy.mpl.geoaxes.GeoAxesSubplot" class="sphx-glr-backref-module-cartopy-mpl-geoaxes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">)</span>
 <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
 <img alt="Gridded temperature" class="sphx-glr-single-img" src="../_images/sphx_glr_model_evaluation_002.png" />
-</div>
-<div class="section" id="scoring">
+</section>
+<section id="scoring">
 <h2>Scoring<a class="headerlink" href="#scoring" title="Permalink to this headline">¶</a></h2>
 <p>Gridders in Verde implement the <a class="reference internal" href="../api/generated/verde.base.BaseGridder.html#verde.base.BaseGridder.score" title="verde.base.BaseGridder.score"><code class="xref py py-meth docutils literal notranslate"><span class="pre">score</span></code></a> method that
 calculates the <a class="reference external" href="https://en.wikipedia.org/wiki/Coefficient_of_determination">R² coefficient of determination</a>
@@ -552,7 +554,7 @@ meaning a perfect prediction, but has no lower bound.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R² score: 0.840455299499375
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R² score: 0.8404552994960163
 </pre></div>
 </div>
 <p>That’s a good score meaning that our gridder is able to accurately predict data that
@@ -572,11 +574,11 @@ that we made. Changing the random number generator seed in
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R² score with seed 1: 0.7832246926676265
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R² score with seed 1: 0.7832246926679673
 </pre></div>
 </div>
-</div>
-<div class="section" id="cross-validation">
+</section>
+<section id="cross-validation">
 <h2>Cross-validation<a class="headerlink" href="#cross-validation" title="Permalink to this headline">¶</a></h2>
 <p>A more robust way of scoring the gridders is to use function
 <a class="reference internal" href="../api/generated/verde.cross_val_score.html#verde.cross_val_score" title="verde.cross_val_score"><code class="xref py py-func docutils literal notranslate"><span class="pre">verde.cross_val_score</span></code></a>, which (by default) uses a <a class="reference external" href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation">k-fold cross-validation</a>
@@ -589,7 +591,7 @@ can then take a mean of these scores.</p>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>k-fold scores: [0.81655898 0.72019255 0.81596348 0.87740087 0.75006854]
-Mean score: 0.7960368854799368
+Mean score: 0.7960368854805913
 </pre></div>
 </div>
 <p>You can also use most cross-validation splitter classes from
@@ -610,11 +612,11 @@ want to shuffle then split the data <em>n</em> times
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>shuffle scores: [0.8404553  0.79219264 0.60098099 0.73123421 0.67325199 0.70560489
  0.68905622 0.83517217 0.86908658 0.84133251]
-Mean score: 0.757836751698671
+Mean score: 0.7578367516957007
 </pre></div>
 </div>
-</div>
-<div class="section" id="parallel-cross-validation">
+</section>
+<section id="parallel-cross-validation">
 <h2>Parallel cross-validation<a class="headerlink" href="#parallel-cross-validation" title="Permalink to this headline">¶</a></h2>
 <p>Cross-validation involves running several model fit and score operations
 which are independent of each other. Because of this, they are prime targets
@@ -628,7 +630,7 @@ library for parallel execution.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Delayed k-fold scores: [Delayed(&#39;fit_score-edff0014-66c8-4ae0-885a-8fffc691583f&#39;), Delayed(&#39;fit_score-b99a203a-9e3c-4c62-a96f-4f8dba5579e6&#39;), Delayed(&#39;fit_score-6c5a111b-6461-42f7-9567-4176041b9700&#39;), Delayed(&#39;fit_score-d1bec514-4e70-43ff-a54a-0b940a5571a1&#39;), Delayed(&#39;fit_score-63681c86-3ae5-4666-836e-4c1f1108ca02&#39;)]
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Delayed k-fold scores: [Delayed(&#39;fit_score-9865bda4-61ae-4d4f-9966-e1780121f664&#39;), Delayed(&#39;fit_score-9da38758-3ac9-4bd2-849a-0b16b6e65839&#39;), Delayed(&#39;fit_score-653debc6-d56d-4e94-a954-f40a61679437&#39;), Delayed(&#39;fit_score-54e7e8d3-b2cc-4fd8-bf8e-b9db7489f328&#39;), Delayed(&#39;fit_score-94c9979d-66fe-4cd0-8f70-200f6e52364f&#39;)]
 </pre></div>
 </div>
 <p>In this case, the scores haven’t actually been computed yet (hence the
@@ -642,7 +644,7 @@ are interested only in the mean score, we can schedule the mean as well using
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Delayed mean: Delayed(&#39;mean-aa88e62a-60ef-426d-ad93-61a3ffb46aca&#39;)
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Delayed mean: Delayed(&#39;mean-2ff3dd9b-7a21-418a-8e76-e752c87a80cf&#39;)
 </pre></div>
 </div>
 <p>To run the scheduled computations and get the mean score, use
@@ -653,7 +655,7 @@ things in parallel.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean score: 0.7960368854799368
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean score: 0.7960368854805913
 </pre></div>
 </div>
 <div class="admonition note">
@@ -661,15 +663,15 @@ things in parallel.</p>
 <p>Dask will run many <code class="docutils literal notranslate"><span class="pre">fit</span></code> operations in parallel, which can be memory
 intensive. Make sure you have enough RAM to run multiple fits.</p>
 </div>
-</div>
-<div class="section" id="improving-the-score">
+</section>
+<section id="improving-the-score">
 <h2>Improving the score<a class="headerlink" href="#improving-the-score" title="Permalink to this headline">¶</a></h2>
 <p>That score is not bad but it could be better. The default arguments for
 <a class="reference internal" href="../api/generated/verde.Spline.html#verde.Spline" title="verde.Spline"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spline</span></code></a> aren’t optimal for this dataset. We could try
 different combinations manually until we get a good score. A better way is to
 do this automatically. In <a class="reference internal" href="model_selection.html#model-selection"><span class="std std-ref">Model Selection</span></a> we’ll go over how to do just
 that.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.338 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.490 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-model-evaluation-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/9c35741d00d56cadd9c9ce8cb60a83ac/model_evaluation.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">model_evaluation.py</span></code></a></p>
@@ -679,8 +681,8 @@ that.</p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -704,7 +706,7 @@ that.</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

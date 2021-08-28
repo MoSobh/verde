@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -132,7 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#interpolators">Interpolators</a><ul>
@@ -311,9 +313,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-verde">
+  <section id="module-verde">
 <span id="api-reference"></span><span id="api"></span><h1>API Reference<a class="headerlink" href="#module-verde" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="interpolators">
+<section id="interpolators">
 <h2>Interpolators<a class="headerlink" href="#interpolators" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -335,8 +337,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="data-processing">
+</section>
+<section id="data-processing">
 <h2>Data Processing<a class="headerlink" href="#data-processing" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -355,8 +357,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="composite-estimators">
+</section>
+<section id="composite-estimators">
 <h2>Composite Estimators<a class="headerlink" href="#composite-estimators" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -372,8 +374,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="model-selection">
+</section>
+<section id="model-selection">
 <h2>Model Selection<a class="headerlink" href="#model-selection" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -395,8 +397,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="coordinate-manipulation">
+</section>
+<section id="coordinate-manipulation">
 <h2>Coordinate Manipulation<a class="headerlink" href="#coordinate-manipulation" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -433,8 +435,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="projection">
+</section>
+<section id="projection">
 <h2>Projection<a class="headerlink" href="#projection" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -450,8 +452,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="masking">
+</section>
+<section id="masking">
 <h2>Masking<a class="headerlink" href="#masking" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -467,8 +469,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="utilities">
+</section>
+<section id="utilities">
 <h2>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -489,15 +491,15 @@
 <td><p>Convert a grid to a table with the values and coordinates of each point.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/verde.make_xarray_grid.html#verde.make_xarray_grid" title="verde.make_xarray_grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">make_xarray_grid</span></code></a>(coordinates, data, data_names)</p></td>
-<td><p>Create an <a class="reference external" href="http://xarray.pydata.org/en/stable/generated/xarray.Dataset.html#xarray.Dataset" title="(in xarray v0.17.1.dev0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">xarray.Dataset</span></code></a> grid from numpy arrays</p></td>
+<td><p>Create an <a class="reference external" href="http://xarray.pydata.org/en/stable/generated/xarray.Dataset.html#xarray.Dataset" title="(in xarray v0.19.1.dev6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">xarray.Dataset</span></code></a> grid from numpy arrays</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/verde.median_distance.html#verde.median_distance" title="verde.median_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">median_distance</span></code></a>(coordinates[, k_nearest, …])</p></td>
 <td><p>Median distance between the <em>k</em> nearest neighbors of each point.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="input-output">
+</section>
+<section id="input-output">
 <h2>Input/Output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -510,8 +512,8 @@
 </tr>
 </tbody>
 </table>
-<span class="target" id="module-verde.datasets"></span></div>
-<div class="section" id="datasets">
+<span class="target" id="module-verde.datasets"></span></section>
+<section id="datasets">
 <h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -551,8 +553,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="base-classes-and-functions">
+</section>
+<section id="base-classes-and-functions">
 <h2>Base Classes and Functions<a class="headerlink" href="#base-classes-and-functions" title="Permalink to this headline">¶</a></h2>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -577,8 +579,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -602,7 +604,7 @@
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

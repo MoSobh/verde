@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -132,7 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../index.html#interpolators">Interpolators</a></li>
@@ -256,7 +258,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="verde-scatter-points">
+  <section id="verde-scatter-points">
 <h1>verde.scatter_points<a class="headerlink" href="#verde-scatter-points" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="verde.scatter_points">
@@ -269,7 +271,7 @@
 <li><p><strong>region</strong> (<em>list =</em><em> [</em><em>W</em><em>, </em><em>E</em><em>, </em><em>S</em><em>, </em><em>N</em><em>]</em>) – The boundaries of a given region in Cartesian or geographic
 coordinates.</p></li>
 <li><p><strong>size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – The number of points to generate.</p></li>
-<li><p><strong>random_state</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/random/legacy.html#numpy.random.RandomState" title="(in NumPy v1.20)"><em>numpy.random.RandomState</em></a><em> or </em><em>an int seed</em>) – A random number generator used to define the state of the random
+<li><p><strong>random_state</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/random/legacy.html#numpy.random.RandomState" title="(in NumPy v1.21)"><em>numpy.random.RandomState</em></a><em> or </em><em>an int seed</em>) – A random number generator used to define the state of the random
 permutations. Use a fixed seed to make sure computations are
 reproducible. Use <code class="docutils literal notranslate"><span class="pre">None</span></code> to choose a seed automatically (resulting in
 different numbers with each run).</p></li>
@@ -319,7 +321,7 @@ specified <em>size</em>.</p>
 </div>
 </dd></dl>
 
-<div style='clear:both'></div></div>
+<div style='clear:both'></div></section>
 
 
            </div>
@@ -343,7 +345,7 @@ specified <em>size</em>.</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

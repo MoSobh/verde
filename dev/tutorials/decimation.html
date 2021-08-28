@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="grid_coordinates.html">Grid Coordinates</a></li>
@@ -132,7 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
@@ -238,7 +240,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-tutorials-decimation-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="data-decimation">
+<section class="sphx-glr-example-title" id="data-decimation">
 <span id="sphx-glr-tutorials-decimation-py"></span><h1>Data Decimation<a class="headerlink" href="#data-decimation" title="Permalink to this headline">¶</a></h1>
 <p>Often times, raw spatial data can be highly oversampled in a direction. In these cases,
 we need to decimate the data before interpolation to avoid aliasing effects.</p>
@@ -269,7 +271,7 @@ operation (mean, median, standard deviation, etc) to the data in regular blocks.
 data inside each block will be replaced by their aggregated value.
 <a class="reference internal" href="../api/generated/verde.BlockReduce.html#verde.BlockReduce" title="verde.BlockReduce"><code class="xref py py-class docutils literal notranslate"><span class="pre">BlockReduce</span></code></a> takes an aggregation function as input. It can be any
 function that receives a numpy array as input and returns a single scalar value. The
-<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="(in NumPy v1.20)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.mean</span></code></a> or <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.median.html#numpy.median" title="(in NumPy v1.20)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.median</span></code></a> functions are usually what we want.</p>
+<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="(in NumPy v1.21)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.mean</span></code></a> or <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.median.html#numpy.median" title="(in NumPy v1.21)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.median</span></code></a> functions are usually what we want.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
@@ -283,7 +285,7 @@ smoothly (like gravity and magnetic data), a mean would be a better option.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>BlockReduce(reduction=&lt;function median at 0x7f238aec5310&gt;,
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>BlockReduce(reduction=&lt;function median at 0x7f07219e5040&gt;,
             spacing=0.08333333333333333)
 </pre></div>
 </div>
@@ -324,7 +326,7 @@ block:</p>
 </div>
 <img alt="Locations of decimated data using block centers" class="sphx-glr-single-img" src="../_images/sphx_glr_decimation_003.png" />
 <p>Now the data are ready for interpolation.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.941 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.097 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-decimation-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/f8b52955dc70997b98d37f11bebc07d5/decimation.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">decimation.py</span></code></a></p>
@@ -334,7 +336,7 @@ block:</p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
+</section>
 
 
            </div>
@@ -358,7 +360,7 @@ block:</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

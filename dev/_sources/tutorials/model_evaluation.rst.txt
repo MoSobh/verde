@@ -473,7 +473,7 @@ meaning a perfect prediction, but has no lower bound.
 
  .. code-block:: none
 
-    R² score: 0.840455299499375
+    R² score: 0.8404552994960163
 
 
 
@@ -511,7 +511,7 @@ wasn't used in the gridding algorithm.
 
  .. code-block:: none
 
-    R² score with seed 1: 0.7832246926676265
+    R² score with seed 1: 0.7832246926679673
 
 
 
@@ -547,7 +547,7 @@ can then take a mean of these scores.
  .. code-block:: none
 
     k-fold scores: [0.81655898 0.72019255 0.81596348 0.87740087 0.75006854]
-    Mean score: 0.7960368854799368
+    Mean score: 0.7960368854805913
 
 
 
@@ -586,7 +586,7 @@ want to shuffle then split the data *n* times
 
     shuffle scores: [0.8404553  0.79219264 0.60098099 0.73123421 0.67325199 0.70560489
      0.68905622 0.83517217 0.86908658 0.84133251]
-    Mean score: 0.757836751698671
+    Mean score: 0.7578367516957007
 
 
 
@@ -623,7 +623,7 @@ To run :func:`verde.cross_val_score` with Dask, use the ``delayed`` argument:
 
  .. code-block:: none
 
-    Delayed k-fold scores: [Delayed('fit_score-edff0014-66c8-4ae0-885a-8fffc691583f'), Delayed('fit_score-b99a203a-9e3c-4c62-a96f-4f8dba5579e6'), Delayed('fit_score-6c5a111b-6461-42f7-9567-4176041b9700'), Delayed('fit_score-d1bec514-4e70-43ff-a54a-0b940a5571a1'), Delayed('fit_score-63681c86-3ae5-4666-836e-4c1f1108ca02')]
+    Delayed k-fold scores: [Delayed('fit_score-9865bda4-61ae-4d4f-9966-e1780121f664'), Delayed('fit_score-9da38758-3ac9-4bd2-849a-0b16b6e65839'), Delayed('fit_score-653debc6-d56d-4e94-a954-f40a61679437'), Delayed('fit_score-54e7e8d3-b2cc-4fd8-bf8e-b9db7489f328'), Delayed('fit_score-94c9979d-66fe-4cd0-8f70-200f6e52364f')]
 
 
 
@@ -655,7 +655,7 @@ are interested only in the mean score, we can schedule the mean as well using
 
  .. code-block:: none
 
-    Delayed mean: Delayed('mean-aa88e62a-60ef-426d-ad93-61a3ffb46aca')
+    Delayed mean: Delayed('mean-2ff3dd9b-7a21-418a-8e76-e752c87a80cf')
 
 
 
@@ -684,7 +684,7 @@ things in parallel.
 
  .. code-block:: none
 
-    Mean score: 0.7960368854799368
+    Mean score: 0.7960368854805913
 
 
 
@@ -711,7 +711,7 @@ that.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.338 seconds)
+   **Total running time of the script:** ( 0 minutes  0.490 seconds)
 
 
 .. _sphx_glr_download_tutorials_model_evaluation.py:

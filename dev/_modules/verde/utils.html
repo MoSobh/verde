@@ -39,6 +39,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
@@ -110,14 +111,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -130,7 +131,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../changes.html">Changelog</a></li>
@@ -518,9 +519,9 @@
 <span class="sd">    &gt;&gt;&gt; data = np.ones_like(coordinates[0])</span>
 <span class="sd">    &gt;&gt;&gt; # Create the grid</span>
 <span class="sd">    &gt;&gt;&gt; grid = make_xarray_grid(coordinates, data, data_names=&quot;dummy&quot;)</span>
-<span class="sd">    &gt;&gt;&gt; print(grid)</span>
+<span class="sd">    &gt;&gt;&gt; print(grid) # doctest: +SKIP</span>
 <span class="sd">    &lt;xarray.Dataset&gt;</span>
-<span class="sd">    Dimensions:   (easting: 3, northing: 2)</span>
+<span class="sd">    Dimensions:   (northing: 2, easting: 3)</span>
 <span class="sd">    Coordinates:</span>
 <span class="sd">      * easting   (easting) float64 -10.0 -8.0 -6.0</span>
 <span class="sd">      * northing  (northing) float64 8.0 10.0</span>
@@ -537,9 +538,9 @@
 <span class="sd">    &gt;&gt;&gt; grid = make_xarray_grid(</span>
 <span class="sd">    ...     coordinates, data, data_names=&quot;dummy&quot;, extra_coords_names=&quot;upward&quot;</span>
 <span class="sd">    ... )</span>
-<span class="sd">    &gt;&gt;&gt; print(grid)</span>
+<span class="sd">    &gt;&gt;&gt; print(grid) # doctest: +SKIP</span>
 <span class="sd">    &lt;xarray.Dataset&gt;</span>
-<span class="sd">    Dimensions:   (easting: 3, northing: 2)</span>
+<span class="sd">    Dimensions:   (northing: 2, easting: 3)</span>
 <span class="sd">    Coordinates:</span>
 <span class="sd">      * easting   (easting) float64 -10.0 -8.0 -6.0</span>
 <span class="sd">      * northing  (northing) float64 8.0 10.0</span>
@@ -557,7 +558,7 @@
 <span class="sd">    ...     data_names=None,</span>
 <span class="sd">    ...     extra_coords_names=&quot;upward&quot;,</span>
 <span class="sd">    ... )</span>
-<span class="sd">    &gt;&gt;&gt; print(grid)</span>
+<span class="sd">    &gt;&gt;&gt; print(grid) # doctest: +SKIP</span>
 <span class="sd">    &lt;xarray.Dataset&gt;</span>
 <span class="sd">    Dimensions:   (easting: 3, northing: 2)</span>
 <span class="sd">    Coordinates:</span>
@@ -951,7 +952,7 @@
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

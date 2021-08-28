@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -132,7 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../index.html#interpolators">Interpolators</a></li>
@@ -259,7 +261,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="verde-grid-coordinates">
+  <section id="verde-grid-coordinates">
 <h1>verde.grid_coordinates<a class="headerlink" href="#verde-grid-coordinates" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="verde.grid_coordinates">
@@ -489,34 +491,46 @@ instead of the corner (default):</p>
 </div>
 </dd></dl>
 
-<div class="section" id="examples-using-verde-grid-coordinates">
+<section id="examples-using-verde-grid-coordinates">
 <h2>Examples using <code class="docutils literal notranslate"><span class="pre">verde.grid_coordinates</span></code><a class="headerlink" href="#examples-using-verde-grid-coordinates" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip="Sometimes, data points are unevenly distributed. In such cases, we might not want to have inter..."><div class="figure align-default" id="id1">
+<div class="sphx-glr-thumbcontainer" tooltip="Sometimes, data points are unevenly distributed. In such cases, we might not want to have inter..."><figure class="align-default" id="id1">
 <img alt="Mask grid points by convex hull" src="../../_images/sphx_glr_convex_hull_mask_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/convex_hull_mask.html#sphx-glr-gallery-convex-hull-mask-py"><span class="std std-ref">Mask grid points by convex hull</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Sometimes, data points are unevenly distributed. In such cases, we might not want to have inter..."><div class="figure align-default" id="id2">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/convex_hull_mask.html#sphx-glr-gallery-convex-hull-mask-py"><span class="std std-ref">Mask grid points by convex hull</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Sometimes, data points are unevenly distributed. In such cases, we might not want to have inter..."><figure class="align-default" id="id2">
 <img alt="Mask grid points by distance" src="../../_images/sphx_glr_distance_mask_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/distance_mask.html#sphx-glr-gallery-distance-mask-py"><span class="std std-ref">Mask grid points by distance</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Creating the coordinates for regular grids in Verde is done using the  verde.grid_coordinates f..."><div class="figure align-default" id="id3">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/distance_mask.html#sphx-glr-gallery-distance-mask-py"><span class="std std-ref">Mask grid points by distance</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Creating the coordinates for regular grids in Verde is done using the  verde.grid_coordinates f..."><figure class="align-default" id="id3">
 <img alt="Grid Coordinates" src="../../_images/sphx_glr_grid_coordinates_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/grid_coordinates.html#sphx-glr-tutorials-grid-coordinates-py"><span class="std std-ref">Grid Coordinates</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="The Green&#x27;s functions based interpolations in Verde are all linear regressions under the hood. ..."><div class="figure align-default" id="id4">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/grid_coordinates.html#sphx-glr-tutorials-grid-coordinates-py"><span class="std std-ref">Grid Coordinates</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="The Green&#x27;s functions based interpolations in Verde are all linear regressions under the hood. ..."><figure class="align-default" id="id4">
 <img alt="Evaluating Performance" src="../../_images/sphx_glr_model_evaluation_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/model_evaluation.html#sphx-glr-tutorials-model-evaluation-py"><span class="std std-ref">Evaluating Performance</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In model_evaluation, we saw how to check the performance of an interpolator using cross-validat..."><div class="figure align-default" id="id5">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/model_evaluation.html#sphx-glr-tutorials-model-evaluation-py"><span class="std std-ref">Evaluating Performance</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In model_evaluation, we saw how to check the performance of an interpolator using cross-validat..."><figure class="align-default" id="id5">
 <img alt="Model Selection" src="../../_images/sphx_glr_model_selection_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/model_selection.html#sphx-glr-tutorials-model-selection-py"><span class="std std-ref">Model Selection</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Verde provides classes and functions for processing spatial data, like bathymetry, GPS, tempera..."><div class="figure align-default" id="id6">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/model_selection.html#sphx-glr-tutorials-model-selection-py"><span class="std std-ref">Model Selection</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Verde provides classes and functions for processing spatial data, like bathymetry, GPS, tempera..."><figure class="align-default" id="id6">
 <img alt="Overview" src="../../_images/sphx_glr_overview_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/overview.html#sphx-glr-tutorials-overview-py"><span class="std std-ref">Overview</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-</div><div style='clear:both'></div></div>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/overview.html#sphx-glr-tutorials-overview-py"><span class="std std-ref">Overview</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div style='clear:both'></div></section>
+</section>
 
 
            </div>
@@ -540,7 +554,7 @@ instead of the corner (default):</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

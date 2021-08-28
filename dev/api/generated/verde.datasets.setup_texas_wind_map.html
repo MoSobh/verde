@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -132,7 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../index.html#interpolators">Interpolators</a></li>
@@ -260,7 +262,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="verde-datasets-setup-texas-wind-map">
+  <section id="verde-datasets-setup-texas-wind-map">
 <h1>verde.datasets.setup_texas_wind_map<a class="headerlink" href="#verde-datasets-setup-texas-wind-map" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="verde.datasets.setup_texas_wind_map">
@@ -286,42 +288,58 @@ accepted to guarantee backward compatibility.</p></li>
 </div>
 </dd></dl>
 
-<div class="section" id="examples-using-verde-datasets-setup-texas-wind-map">
+<section id="examples-using-verde-datasets-setup-texas-wind-map">
 <h2>Examples using <code class="docutils literal notranslate"><span class="pre">verde.datasets.setup_texas_wind_map</span></code><a class="headerlink" href="#examples-using-verde-datasets-setup-texas-wind-map" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip="Biharmonic spline interpolation is based on estimating vertical forces acting on an elastic she..."><div class="figure align-default" id="id1">
+<div class="sphx-glr-thumbcontainer" tooltip="Biharmonic spline interpolation is based on estimating vertical forces acting on an elastic she..."><figure class="align-default" id="id1">
 <img alt="Gridding with splines" src="../../_images/sphx_glr_spline_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/spline.html#sphx-glr-gallery-spline-py"><span class="std std-ref">Gridding with splines</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="The verde.Spline has two main parameters that need to be configured:"><div class="figure align-default" id="id2">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/spline.html#sphx-glr-gallery-spline-py"><span class="std std-ref">Gridding with splines</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="The verde.Spline has two main parameters that need to be configured:"><figure class="align-default" id="id2">
 <img alt="Gridding with splines (cross-validated)" src="../../_images/sphx_glr_spline_cv_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/spline_cv.html#sphx-glr-gallery-spline-cv-py"><span class="std std-ref">Gridding with splines (cross-validated)</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Verde offers the verde.Trend class to fit a 2D polynomial trend to your data. This can be usefu..."><div class="figure align-default" id="id3">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/spline_cv.html#sphx-glr-gallery-spline-cv-py"><span class="std std-ref">Gridding with splines (cross-validated)</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Verde offers the verde.Trend class to fit a 2D polynomial trend to your data. This can be usefu..."><figure class="align-default" id="id3">
 <img alt="Polynomial trend" src="../../_images/sphx_glr_trend_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/trend.html#sphx-glr-gallery-trend-py"><span class="std std-ref">Polynomial trend</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="We can use verde.Vector to simultaneously process and grid all components of vector data. Each ..."><div class="figure align-default" id="id4">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/trend.html#sphx-glr-gallery-trend-py"><span class="std std-ref">Polynomial trend</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="We can use verde.Vector to simultaneously process and grid all components of vector data. Each ..."><figure class="align-default" id="id4">
 <img alt="Gridding 2D vectors" src="../../_images/sphx_glr_vector_uncoupled_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../gallery/vector_uncoupled.html#sphx-glr-gallery-vector-uncoupled-py"><span class="std std-ref">Gridding 2D vectors</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="The Green&#x27;s functions based interpolations in Verde are all linear regressions under the hood. ..."><div class="figure align-default" id="id5">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../gallery/vector_uncoupled.html#sphx-glr-gallery-vector-uncoupled-py"><span class="std std-ref">Gridding 2D vectors</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="The Green&#x27;s functions based interpolations in Verde are all linear regressions under the hood. ..."><figure class="align-default" id="id5">
 <img alt="Evaluating Performance" src="../../_images/sphx_glr_model_evaluation_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/model_evaluation.html#sphx-glr-tutorials-model-evaluation-py"><span class="std std-ref">Evaluating Performance</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In model_evaluation, we saw how to check the performance of an interpolator using cross-validat..."><div class="figure align-default" id="id6">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/model_evaluation.html#sphx-glr-tutorials-model-evaluation-py"><span class="std std-ref">Evaluating Performance</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In model_evaluation, we saw how to check the performance of an interpolator using cross-validat..."><figure class="align-default" id="id6">
 <img alt="Model Selection" src="../../_images/sphx_glr_model_selection_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/model_selection.html#sphx-glr-tutorials-model-selection-py"><span class="std std-ref">Model Selection</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Trend estimation and removal is a common operation, particularly when dealing with geophysical ..."><div class="figure align-default" id="id7">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/model_selection.html#sphx-glr-tutorials-model-selection-py"><span class="std std-ref">Model Selection</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Trend estimation and removal is a common operation, particularly when dealing with geophysical ..."><figure class="align-default" id="id7">
 <img alt="Trend Estimation" src="../../_images/sphx_glr_trends_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../tutorials/trends.html#sphx-glr-tutorials-trends-py"><span class="std std-ref">Trend Estimation</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This is average wind speed and air temperature for data for the state of Texas, USA, on Februar..."><div class="figure align-default" id="id8">
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../tutorials/trends.html#sphx-glr-tutorials-trends-py"><span class="std std-ref">Trend Estimation</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This is average wind speed and air temperature for data for the state of Texas, USA, on Februar..."><figure class="align-default" id="id8">
 <img alt="Wind speed data from Texas" src="../../_images/sphx_glr_texas-wind_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../sample_data/texas-wind.html#sphx-glr-sample-data-texas-wind-py"><span class="std std-ref">Wind speed data from Texas</span></a></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-</div>
-</div><div style='clear:both'></div></div>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../sample_data/texas-wind.html#sphx-glr-sample-data-texas-wind-py"><span class="std std-ref">Wind speed data from Texas</span></a></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div style='clear:both'></div></section>
+</section>
 
 
            </div>
@@ -345,7 +363,7 @@ accepted to guarantee backward compatibility.</p></li>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

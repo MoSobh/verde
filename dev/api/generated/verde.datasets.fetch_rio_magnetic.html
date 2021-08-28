@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
@@ -112,14 +114,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -132,7 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../index.html#interpolators">Interpolators</a></li>
@@ -260,7 +262,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="verde-datasets-fetch-rio-magnetic">
+  <section id="verde-datasets-fetch-rio-magnetic">
 <h1>verde.datasets.fetch_rio_magnetic<a class="headerlink" href="#verde-datasets-fetch-rio-magnetic" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="verde.datasets.fetch_rio_magnetic">
@@ -309,7 +311,7 @@ on the table below. See the original data for more processing information.</p>
 automatically.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v1.2.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>) – The magnetic anomaly data. Columns are longitude, latitude, total-field
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v1.3.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>) – The magnetic anomaly data. Columns are longitude, latitude, total-field
 magnetic anomaly (nanoTesla), observation height above the WGS84
 ellipsoid (in meters), flight line type (LINE or TIE), and flight line
 number for each data point.</p>
@@ -324,14 +326,16 @@ number for each data point.</p>
 </div>
 </dd></dl>
 
-<div class="section" id="examples-using-verde-datasets-fetch-rio-magnetic">
+<section id="examples-using-verde-datasets-fetch-rio-magnetic">
 <h2>Examples using <code class="docutils literal notranslate"><span class="pre">verde.datasets.fetch_rio_magnetic</span></code><a class="headerlink" href="#examples-using-verde-datasets-fetch-rio-magnetic" title="Permalink to this headline">¶</a></h2>
-<div class="sphx-glr-thumbcontainer" tooltip="    **The Rio magnetic anomaly dataset is deprecated and will be removed in     Verde v2.0.0** ..."><div class="figure align-default" id="id1">
+<div class="sphx-glr-thumbcontainer" tooltip="    **The Rio magnetic anomaly dataset is deprecated and will be removed in     Verde v2.0.0** ..."><figure class="align-default" id="id1">
 <img alt="[DEPRECATED] Magnetic data from Rio de Janeiro" src="../../_images/sphx_glr_rio_magnetic_thumb.png" />
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../sample_data/rio_magnetic.html#sphx-glr-sample-data-rio-magnetic-py"><span class="std std-ref">[DEPRECATED] Magnetic data from Rio de Janeiro</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-</div><div style='clear:both'></div></div>
-</div>
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../../sample_data/rio_magnetic.html#sphx-glr-sample-data-rio-magnetic-py"><span class="std std-ref">[DEPRECATED] Magnetic data from Rio de Janeiro</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div style='clear:both'></div></section>
+</section>
 
 
            </div>
@@ -355,7 +359,7 @@ number for each data point.</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

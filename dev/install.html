@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -39,6 +40,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/plot_directive.css" type="text/css" />
   <link rel="stylesheet" href="_static/style.css" type="text/css" />
   <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="_static/gallery-binder.css" type="text/css" />
@@ -112,7 +114,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorials/overview.html">Overview</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installing</a><ul>
@@ -127,7 +129,7 @@
 <li class="toctree-l1"><a class="reference internal" href="citing.html">Citing Verde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gallery/index.html">Gallery</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User Guide</span></p>
+<p><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="sample_data/index.html">Sample Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/grid_coordinates.html">Grid Coordinates</a></li>
@@ -140,7 +142,7 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorials/weights.html">Using Weights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/vectors.html">Vector Data</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p><span class="caption-text">Reference documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api/index.html">API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
@@ -236,9 +238,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="installing">
+  <section id="installing">
 <span id="install"></span><h1>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="which-python">
+<section id="which-python">
 <h2>Which Python?<a class="headerlink" href="#which-python" title="Permalink to this headline">¶</a></h2>
 <p>You’ll need <strong>Python 3.6 or greater</strong>.</p>
 <p>We recommend using the
@@ -247,8 +249,8 @@ to ensure you have all dependencies installed and the <code class="docutils lite
 available.
 Installing Anaconda does not require administrative rights to your computer and
 doesn’t interfere with any other Python installations in your system.</p>
-</div>
-<div class="section" id="dependencies">
+</section>
+<section id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://www.numpy.org/">numpy</a></p></li>
@@ -266,7 +268,7 @@ they are installed:</p>
 Jacobian matrices in splines with faster and more memory efficient multi-threaded
 versions.</p></li>
 <li><p><a class="reference external" href="https://github.com/storpipfugl/pykdtree">pykdtree</a>: replaces
-<a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.html#scipy.spatial.cKDTree" title="(in SciPy v1.6.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">scipy.spatial.cKDTree</span></code></a> for better performance in near neighbor calculations
+<a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/reference/generated/scipy.spatial.cKDTree.html#scipy.spatial.cKDTree" title="(in SciPy v1.7.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">scipy.spatial.cKDTree</span></code></a> for better performance in near neighbor calculations
 used in blocked operations, distance masking, etc.</p></li>
 </ul>
 <p>Most of the examples in the <a class="reference internal" href="gallery/index.html#gallery"><span class="std std-ref">Gallery</span></a> and <a class="reference internal" href="tutorials/index.html#tutorials"><span class="std std-ref">Tutorials</span></a> also use:</p>
@@ -275,23 +277,23 @@ used in blocked operations, distance masking, etc.</p></li>
 <li><p><a class="reference external" href="https://scitools.org.uk/cartopy/">cartopy</a> for plotting maps</p></li>
 <li><p><a class="reference external" href="https://jswhit.github.io/pyproj/">pyproj</a> for cartographic projections</p></li>
 </ul>
-</div>
-<div class="section" id="installing-with-conda">
+</section>
+<section id="installing-with-conda">
 <h2>Installing with conda<a class="headerlink" href="#installing-with-conda" title="Permalink to this headline">¶</a></h2>
 <p>You can install Verde using the <a class="reference external" href="https://conda.io/">conda package manager</a> that comes
 with the Anaconda distribution:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">verde</span> <span class="o">--</span><span class="n">channel</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="installing-with-pip">
+</section>
+<section id="installing-with-pip">
 <h2>Installing with pip<a class="headerlink" href="#installing-with-pip" title="Permalink to this headline">¶</a></h2>
 <p>Alternatively, you can also use the <a class="reference external" href="https://pypi.org/project/pip/">pip package manager</a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">verde</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="installing-the-latest-development-version">
+</section>
+<section id="installing-the-latest-development-version">
 <h2>Installing the latest development version<a class="headerlink" href="#installing-the-latest-development-version" title="Permalink to this headline">¶</a></h2>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">pip</span></code> to install the latest source from Github:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">fatiando</span><span class="o">/</span><span class="n">verde</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="n">master</span><span class="o">.</span><span class="n">zip</span>
@@ -303,8 +305,8 @@ with the Anaconda distribution:</p>
 <span class="n">pip</span> <span class="n">install</span> <span class="o">.</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="testing-your-install">
+</section>
+<section id="testing-your-install">
 <h2>Testing your install<a class="headerlink" href="#testing-your-install" title="Permalink to this headline">¶</a></h2>
 <p>We ship a full test suite with the package.
 To run the tests, you’ll need to install some extra dependencies first:</p>
@@ -322,8 +324,8 @@ interpreter:</p>
 <span class="n">verde</span><span class="o">.</span><span class="n">test</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -347,7 +349,7 @@ interpreter:</p>
     <p>
         &copy; Copyright 2017-2021, The Verde Developers
       <span class="lastupdated">
-        Last updated on Mar 22, 2021.
+        Last updated on Aug 28, 2021.
       </span>
 
     </p>

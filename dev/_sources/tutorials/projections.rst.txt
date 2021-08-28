@@ -178,7 +178,7 @@ projected Cartesian coordinates.
 
     Cartesian grid:
     <xarray.Dataset>
-    Dimensions:     (easting: 54, northing: 61)
+    Dimensions:     (northing: 61, easting: 54)
     Coordinates:
       * easting     (easting) float64 -1.175e+07 -1.173e+07 ... -1.077e+07
       * northing    (northing) float64 2.074e+06 2.093e+06 ... 3.171e+06 3.19e+06
@@ -402,7 +402,7 @@ longitude and latitude points taken from the map above).
     3    24.637668 -114.432161    9829.645080 -5198.947540
     4    24.616884 -114.409548   13106.193440 -5639.303392
     ..         ...         ...            ...          ...
-    195  20.585669 -110.090452  638926.930221 -3016.467548
+    195  20.585669 -110.090452  638926.930221 -3016.467547
     196  20.564257 -110.067839  642203.478581 -2969.351780
     197  20.542841 -110.045226  645480.026941 -2914.069306
     198  20.521422 -110.022613  648756.575301 -2859.557818
@@ -488,7 +488,7 @@ And finally plot the profile.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.830 seconds)
+   **Total running time of the script:** ( 0 minutes  2.470 seconds)
 
 
 .. _sphx_glr_download_tutorials_projections.py:
